@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <img class="logo__Alura" src="./img/logoAlura.png" alt="Logo Alura">
+        <nav class="cabecalho">
+            <div class="titulo">
+                <h1>Seja bem vindo ao <strong class="titulo__destaque">Encriptador e Descriptador de Texto</strong></h1>
+            </div>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section>
+            <div class="Regras">
+                <p>Apenas Letras Minusculas e Sem Acento</p>
+            </div>
+            <textarea class="caixa__texto" cols="41" rows="4" placeholder="Digite o seu texto"></textarea>
+            <section class="botoes">
+                <button class="botoes__comando" onclick="btEncriptar()">Criptografar</button>
+                <button class="botoes__comando" onclick="btDescriptografar()">Descriptografar</button>
+                <button class="botoes__comando" onclick="btLimpar()"class='bt-Limpar'>Limpar</button>
+            </section>
+        </section>
+        <section class="apresentacao__mensagem">
+            <div class="Caixa__mensagem">
+                <textarea class="mensagem" cols="20" rows="10" placeholder="O texto convertido aparecerar aqui!"></textarea>
+            </div>
+            <button class="botoes__comando" class="bt-copiar" onclick="btCopiar()">Copiar</button>
+        </section>
+    </main>   
+    <footer class="rodape">
+        <p>Desenvolvido por Alex</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
